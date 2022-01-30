@@ -1,0 +1,118 @@
+.roomBody {
+    background: $black;
+  
+    section {
+      h2 {
+        color: white;
+        font-size: 4rem;
+        margin-top: 100px;
+        padding-bottom: 2rem;
+      }
+      img{
+        margin: auto;
+        border: 1px solid black;
+        border-radius: 10%;
+    }
+    }
+  
+    .roomHeader {
+      height: 100vh;
+      display: flex;
+      justify-content: start;
+      align-items: center;
+      background: url(../img/room/HEADER-CHAMBRE.png) center/cover;
+  
+      .bgHeader {
+        width: 50%;
+  
+        .intro {
+          margin-left: 30px;
+          h1 {
+            color: grey;
+            font-weight: 300;
+            margin-bottom: 20px;
+          }
+          p {
+            font-size: 2rem;
+            color: grey;
+          }
+        }
+      }
+    }
+  
+    .info {
+      div {
+        h4{
+          font-size: 3rem;
+          padding-bottom: 3rem;
+        }
+        p{
+          font-size: 2rem;
+          padding-bottom: 3rem;
+        }
+        p:nth-child(3){
+          font-weight: 900;
+        }
+        &:first-child {
+          background: black;
+          color: grey;
+          border-radius: 10px;
+          margin: 2rem 10rem;
+          
+        }
+        &:nth-child(2) {
+          background: black;
+          color: white;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+            padding: 2rem auto;
+        }
+      }
+      input[type="button"] {
+        color: black;
+        background: white;
+        margin: 2rem auto;
+        padding: 20px 50px;
+        border-radius: 10px;
+      }
+    }
+  }
+
+  #return{
+    display: none;
+  }
+  
+// média queries
+@media only screen and (max-width: 959px){
+}
+@media screen and (max-width: 768px) {
+  @media screen and (max-width: 768px) {
+    #return{
+     .fleche{
+       display: flex;
+       justify-content: center;
+       flex-direction: row;
+       background-color: white;
+       padding: auto;
+     }
+    }
+   }
+}
+@media only screen and (max-width: 451px){
+  *, body {
+    padding: 0rem;
+    .roomBody .info div:first-child {
+    margin: 2rem 0rem;
+    }
+  #return{
+      display: flex;
+      justify-content: center;
+      background-color: black;
+      margin: auto;
+      .fleche{
+        background-color: rgb(0, 0, 0);
+      }
+    }
+  }
+}
